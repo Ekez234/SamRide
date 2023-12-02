@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="uber.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	<title>Uber</title>
+</head>
+<body>
+	<section id="first">
+	<div class="first">
+		<div class="first-left">
+			<a href="#" class="leftup">Sam Ride</a>
+		</div>
+			
+		<div class="first-right">
+			<a href="#" class="right"><i class="bi bi-globe"></i>EN</a>
+			<a href="#" class="right"><i class="bi bi-three-dots-vertical"></i></i>Product</a>
+			<a href="#" class="right">LogIn</a>
+			<a href="#" class="right">SignUp</a>
+		</div>
+	</div>
+	</section>
+<!--second-->
+	<section id="second">
+		<div class="tab" class="second-text">
+				
+					<button class="tablinks" onclick="openCity(event,'drive')">
+						<a href="#drive">
+							<i class="bi bi-bar-chart-fill"></i>
+							Drive or Deliver
+						</a>
+					</button>
+					<button class="tablinks" onclick="openCity(event,'ride')">
+						<a href="#ride"><i class="bi bi-car-front-fill"></i> Ride With us</a>
+					</button>
+					<button class="tablinks" onclick="openCity(event,'eat')">
+						<a href="#eat"><i class="bi bi-three-dots"></i>Eat</a>
+					</button>
+			<div id="drive" class="tabcontent">
+				<p class="note">Get in the driver's seat and get paid.</p>
+				<p><small class="small-note">Drive alongside the best,active and largest networks of driver's in the country.</small></p>
+				<button>Sign Up to Drive</button>
+				<p><a href="">Learn more about <b>Driving</b> and <b>Delivering</b></a></p>
+			</div>
+			<div id="ride" class="tabcontent">
+			<p class="note">Request a Ride now</p>
+				<div class="form">
+					<input type="text" placeholder="Type location for pickup here"><i class="bi bi-send-fill"></i>
+				</div>
+
+				<div class="form">
+					<input type="text" placeholder="Type Destination here">
+				</div>
+				<button class="b">Request Now</button><button class="c">Schedule Now</button>
+			</div>
+			<div id="eat" class="tabcontent">
+				<p class="note">Discover delicious eats</p>
+				<p class="red"><small class="small-note">Order delivery from restaurant you love</small></p>
+				<button>Order</button><a href="">Own a restaurant? Partner with Uber Eats</a>
+			</div>
+		</div>
+	</section>
+<!--third-->
+	<section id="third">
+		<div class="third-1">
+			<p>The Samride you know, reimagined for business</p>
+		</div>
+		<p 	class="small-third">A platform for managing global rides and meals, and local deliveries, for companies of any size.</p>
+		<button>Get started</button>
+		
+	</section>
+<!--fourth-->
+	<section id="fourth">
+		<div>
+			<p class="fourth-note">Focused on safety, wherever you go</p>
+		</div>
+	  <div class="fourth-img">
+		<div class="fourth-desc">
+			<img src="incar.png">
+			<p class="p-head">Our commitment to your safety</p>
+			<p class="p-note">With every safety feature and every standard in our Community Guidelines, we're committed to helping to create a safe environment for our users.</p>
+			<a href="" class="p-a">Read about our Community Guidelines</a>
+			<a href="" class="p-a">See all safety features</a>
+		</div>
+		<div class="fourth-desc">
+			<img src="top.png">
+			<p class="p-head">Setting 10,000+ cities in motion</p>
+			<p class="p-note">The app is available in thousands of cities worldwide, so you can request a ride even when you’re far from home.</p>
+			<a href="" class="p-b">View all cities</a>
+		</div>
+	</div>
+	</section>
+	<script>
+  function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
